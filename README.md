@@ -1,30 +1,22 @@
-# React + TypeScript + Vite
+# Youtube Clone2
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+- started youtube_clone 
+- npm create vite@latest, choosed react, typescript 
+- cd folder, npm install
+- npm run dev
 
-Currently, two official plugins are available:
+-addinig tailwind.css
+deleted app.css in src/assets app.tsx ma remove imp of css and structure ma div of Youtube
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+now add tailwind css by following link commands {https://tailwindcss.com/docs/guides/vite}
 
-## Expanding the ESLint configuration
+- npm i react-router-dom
+- npm i react-icons
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+- create context/context.ts 
+- create utils/constants.ts //copyed code as tutor
+- create utils/api.ts       //copyed code from rapidapi / youtube /codesnippits
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+CREATE .env file
+copy  key
