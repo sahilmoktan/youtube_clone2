@@ -1,13 +1,14 @@
-import React from "react"
+// App.tsx
+import React from 'react';
+import { AppContextProvider } from './context/contextApi';
+import YoutubeMain from './components/YoutubeMain'; // Adjust the path based on your file structure
 
-import {AppContext} from "./context/contextApi"
-const Youtube = () => {
+const App = () => {
   return (
-    <AppContext>
-      
-    <div className="text-3xl">Youtube</div>
-    </AppContext>)
-  
-}
+    <AppContextProvider>
+      <YoutubeMain />
+    </AppContextProvider>
+  );
+};
 
-export default Youtube
+export default App;
