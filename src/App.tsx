@@ -1,13 +1,12 @@
 // App.tsx
 import React from 'react';
-import { AppContextProvider } from './context/contextApi';
-import YoutubeMain from './components/YoutubeMain'; // Adjust the path based on your file structure
+import Navbar from './components/Navbar';
 
 const App = () => {
   return (
-    <AppContextProvider>
-      <YoutubeMain />
-    </AppContextProvider>
+   <div>
+   <Navbar/>
+   </div>
   );
 };
 
